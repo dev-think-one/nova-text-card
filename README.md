@@ -26,9 +26,9 @@ class Main extends Dashboard
     public function cards()
     {
         return [
-            (new \NovaTextCard\NovaTextCard)
+               (new \NovaTextCard\NovaTextCard)
                 ->width('full')
-                ->content('Welcome to application!')
+                ->content('<h1 class="text-center text-3xl text-gray-500 font-light">Welcome to the application!</h1>')
         ];
     }
 }
