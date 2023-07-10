@@ -13,8 +13,13 @@ build:
             memory_limit: "-1"
       tests:
         override:
+          - command: vendor/bin/phpunit --coverage-clover=coverage-file
+            coverage:
+              file: coverage-file
+              format: php-clover
           - php-scrutinizer-run
 
 checks:
   php:
     fix_doc_comments: true
+
