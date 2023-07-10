@@ -6,17 +6,10 @@ use Laravel\Nova\Card;
 
 class NovaTextCard extends Card
 {
-    public $content = '';
 
-    /**
-     * Get the component name for the element.
-     *
-     * @return string
-     */
-    public function component()
-    {
-        return 'nova-text-card';
-    }
+    public $component = 'nova-text-card';
+
+    public $content = '';
 
     public function content(string $content): static
     {

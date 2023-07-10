@@ -7,4 +7,4 @@ mix
     .js('resources/js/card.js', 'js')
     .vue({ version: 3 })
     .sass('resources/sass/card.scss', 'css')
-    .nova('yaroslawww/nova-text-card')
+    .nova('think.studio/nova-text-card')
